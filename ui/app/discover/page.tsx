@@ -80,7 +80,7 @@ const Page = () => {
           {discover &&
             discover?.map((item, i) => (
               <Link
-                href={`/?q=Summary: ${item.url}`}
+                href={`${item.url}`}
                 key={i}
                 className="max-w-sm rounded-lg overflow-hidden bg-light-secondary dark:bg-dark-secondary hover:-translate-y-[1px] transition duration-200"
               >
