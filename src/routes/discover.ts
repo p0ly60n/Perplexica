@@ -8,27 +8,27 @@ router.get('/', async (req, res) => {
   try {
     const data = (
       await Promise.all([
-        searchSearxng('site:businessinsider.com AI', {
+        searchSearxng('site:wsj.com world', {
           engines: ['bing news'],
           pageno: 1,
         }),
-        searchSearxng('site:www.exchangewire.com AI', {
+        searchSearxng('site:wsj.com politics', {
           engines: ['bing news'],
           pageno: 1,
         }),
-        searchSearxng('site:yahoo.com AI', {
+        searchSearxng('site:wsj.com news', {
           engines: ['bing news'],
           pageno: 1,
         }),
-        searchSearxng('site:businessinsider.com tech', {
+        searchSearxng('site:wsj.com business', {
           engines: ['bing news'],
           pageno: 1,
         }),
-        searchSearxng('site:www.exchangewire.com tech', {
+        searchSearxng('site:wsj.com economy', {
           engines: ['bing news'],
           pageno: 1,
         }),
-        searchSearxng('site:yahoo.com tech', {
+        searchSearxng('site:wsj.com tech', {
           engines: ['bing news'],
           pageno: 1,
         }),
