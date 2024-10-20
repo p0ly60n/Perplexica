@@ -8,20 +8,20 @@ router.get('/', async (req, res) => {
   try {
     const data = (
       await Promise.all([
-        searchSearxng('site:apnews.com world', {
-          engines: ['bing news'],
+        searchSearxng('site:apnews.com world news', {
+          engines: ['brave.news'],
           pageno: 1,
         }),
         searchSearxng('site:apnews.com politics', {
-          engines: ['bing news'],
+          engines: ['brave.news'],
           pageno: 1,
         }),
         searchSearxng('site:apnews.com business', {
-          engines: ['bing news'],
+          engines: ['brave.news'],
           pageno: 1,
         }),
-        searchSearxng('site:apnews.com tech', {
-          engines: ['bing news'],
+        searchSearxng('site:apnews.com technology', {
+          engines: ['brave.news'],
           pageno: 1,
         }),
       ])
